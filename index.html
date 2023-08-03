@@ -1,113 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animated Project</title>
+    <script src="index.js" defet type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Animated Project</title>
-<script src="index.js" defet type="module"></script>
-<link rel="stylesheet" href="index.css">
-
-<body>
+  <body>
     <div class="hidden-box">
-        <div class="text-box hidden">
-            <h2>Want to see my another projects on the github?</h2>
-            <p>Follow along!</p>
-            <p>I am a determined Front-End developer with experience in commercial projects.
-                Actively keeping up with modern trends in web application development,
-                I continuously strive to enhance my skills. Possessing a solid understanding of user interface design
-                principles,
-                I aim to craft elegant and intuitive interfaces that elevate user experience.
-                I thoroughly enjoy tackling complex challenges and finding efficient solutions. Open to new
-                opportunities,
-                I am ready to contribute to your team.</p>
-            <img src="./assets/images/monkey.jpg" alt="Monkey image">
-            <p>Click <a href="">here</a> to view more!</p>
-        </div>
+      <div class="text-box hidden">
+        <h2>Want to see my another projects on the github?</h2>
+        <p>Follow along!</p>
+        <p>
+          I am a determined Front-End developer with experience in commercial
+          projects. Actively keeping up with modern trends in web application
+          development, I continuously strive to enhance my skills. Possessing a
+          solid understanding of user interface design principles, I aim to
+          craft elegant and intuitive interfaces that elevate user experience. I
+          thoroughly enjoy tackling complex challenges and finding efficient
+          solutions. Open to new opportunities, I am ready to contribute to your
+          team.
+        </p>
+        <img src="./assets/images/monkey.jpg" alt="Monkey image" />
+        <p>Click <a href="">here</a> to view more!</p>
+      </div>
     </div>
 
     <div class="box-container">
-        <div class="box small-box">
-            <div class="pill">
-                <div class="arrow left-expand-arrow"></div>
-            </div>
+      <div class="box small-box">
+        <div class="pill">
+          <div class="arrow left-expand-arrow"></div>
         </div>
+      </div>
 
-        <div class="box long-box social-fan">
-            <div class="pill"></div>
-            <div class="hidden-pill social instagram hidden">
-                <a href="">INSTAGRAM</a>
-            </div>
-            <div class="hidden-pill social email hidden">
-                <a href="">EMAIL</a>
-            </div>
-            <div class="hidden-pill social vk hidden">
-                <a href="">VK</a>
-            </div>
+      <div class="box long-box social-fan">
+        <div class="pill"></div>
+        <div class="hidden-pill social instagram hidden">
+          <a href="">INSTAGRAM</a>
         </div>
+        <div class="hidden-pill social email hidden">
+          <a href="">EMAIL</a>
+        </div>
+        <div class="hidden-pill social vk hidden">
+          <a href="">VK</a>
+        </div>
+      </div>
 
-        <div class="box long-box">
-            <div class="pill">
-                <!-- <svg></svg> -->
+      <div class="box long-box">
+        <div class="pill">
+          <!-- <svg></svg> -->
+        </div>
+      </div>
+
+      <div class="box small-box">
+        <div class="pill"></div>
+      </div>
+
+      <div class="box long-box">
+        <div class="pill">
+          <a href="https://github.com/aliev008">Made by F.A.</a>
+        </div>
+      </div>
+
+      <div class="box small-box stretchable">
+        <div class="pill">
+          <a href="https://github.com/aliev008" class="hidden">NEWSLETTER</a>
+        </div>
+      </div>
+
+      <div class="box small-box stretchable">
+        <div class="pill">
+          <p class="hidden">:)</p>
+        </div>
+      </div>
+
+      <div class="box large-box" id="takeover">
+        <div class="pill">
+          <div class="logo-container">
+            <img src="" alt="F.A. Logo" />
+            <div class="arrow-container">
+              <div class="arrow right-expand-arrow"></div>
             </div>
+          </div>
+
+          <div class="text-box hidden">
+            <h1>F.A.</h1>
+            <p>Full-Stack Web-Developer</p>
+            <p>My misson is to deliver great projects to the world</p>
+            <p>
+              Make sure to check my
+              <a href="https://github.com/aliev008">github</a> profile
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="box small-box">
-            <div class="pill"></div>
+      <div class="x-box">
+        <p>Click</p>
+        <svg
+          id="x-letter-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="100%"
+          viewBox="0 0 496 495"
+          fill="none"
+        >
+          <path
+            d="M352.709 478.773L262.142 388.207C254.332 380.396 241.668 380.396 233.858 388.207L185.039 437.026L143.291 478.773C131.575 490.489 112.58 490.489 100.865 478.773L16.681 394.59C4.96522 382.874 4.96523 363.879 16.681 352.163L107.248 261.596C115.058 253.786 115.058 241.123 107.248 233.312L16.6809 142.745C4.96521 131.03 4.96521 112.035 16.6809 100.319L100.865 16.1353C112.58 4.41958 131.575 4.41958 143.291 16.1353L233.858 106.702C241.668 114.513 254.332 114.513 262.142 106.702L352.709 16.1353C364.425 4.41956 383.42 4.41956 395.135 16.1353L479.319 100.319C491.035 112.035 491.035 131.03 479.319 142.745L388.752 233.312C380.942 241.123 380.942 253.786 388.752 261.597L479.319 352.163C491.035 363.879 491.035 382.874 479.319 394.59L395.135 478.773C383.42 490.489 364.425 490.489 352.709 478.773Z"
+            stroke="rgb(38,38,38)"
+            stroke-width="16"
+          />
+        </svg>
+      </div>
+
+      <div class="box large-box" id="squish">
+        <div class="pill">
+          <div class="text-box hidden">
+            Need to create a web app? Contact me
+            <a href="mailto: hfe.as@yandex.ru">now</a>
+          </div>
         </div>
+      </div>
 
-        <div class="box long-box">
-            <div class="pill">
-                <a href="https://github.com/aliev008">Made by F.A.</a>
-            </div>
+      <div class="box slider-container">
+        <div class="pill">
+          <div class="input-container">
+            <input
+              id="slider-input"
+              type="range"
+              min="0"
+              max="10"
+              value="0"
+              step="1"
+            />
+          </div>
         </div>
-
-        <div class="box small-box stretchable">
-            <div class="pill">
-                <a href="https://github.com/aliev008" class="hidden">NEWSLETTER</a>
-            </div>
-        </div>
-
-        <div class="box small-box stretchable">
-            <div class="pill">
-                <p class="hidden">:)</p>
-            </div>
-        </div>
-
-        <div class="box long-box" id="takeover">
-            <div class="pill">
-                <div class="logo-container">
-                    <img src="" alt="F.A. Logo">
-                    <div class="arrow-container">
-                        <div class="arrow right-expand-arrow"></div> 
-                    </div>
-                </div>
-
-                <div class="text-box hidden">
-                    <h1>F.A.</h1>
-                    <p>Full-Stack Web-Developer</p>
-                    <p>My misson is to deliver great projects to the world</p>
-                    <p>Make sure to check my <a href="https://github.com/aliev008">github</a> profile</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="x-box">
-            <p>Click</p>
-            <!-- <svg></svg> -->
-        </div>
-
-        <div class="box long-box" id="squish">
-            <div class="pill">
-                <div class="text-box hidden">
-                    Need to create a web app? Contact me <a href="mailto: hfe.as@yandex.ru">now</a> 
-                </div>
-            </div>
-        </div>
-
-        <div class="box slider-container">
-            <div class="pill">
-                <div class="input-container">
-                    <input id="slider-input" type="range" min="0" max="10" value="0" step="1">
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
-</body>
+  </body>
+</html>
