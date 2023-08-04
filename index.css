@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   transition: all 0.5s ease-in-out;
   font-family: "Poppins", sans-serif;
   color: rgb(38, 38, 38);
   font-weight: 200;
+  font-size: 3rem;
 }
 
 body {
@@ -192,6 +197,7 @@ a {
 }
 
 .logo-container img {
+  margin-right: 100px;
   width: 100%;
 }
 
@@ -220,6 +226,7 @@ a {
   display: block;
   animation: fanInstagram 1s ease-in-out;
   animation-fill-mode: forwards;
+  display: flex;
 }
 
 @keyframes fanInstagram {
@@ -273,5 +280,40 @@ a {
   }
 }
 
-/* 1/02/14 */
+.stretchable:hover {
+  flex-grow: 5 !important;
+}
 
+#takeover:hover ~ #squish {
+  min-width: 0;
+}
+
+#takeover:hover .arrow-container {
+  display: none;
+}
+
+.large-box:hover {
+  flex-grow: 10 !important;
+}
+
+.large-box:hover .text-box {
+  display: block;
+}
+
+.large-box .text-box {
+  max-width: 300px;
+}
+
+.large-box .text-box p {
+  font-size: 1.8rem;
+}
+
+.large-box .text-box a {
+  font-size: 1.8rem;
+  color: rgb(196, 104, 0);
+  font-weight: 400;
+}
+
+.small-box.stretchable:hover .hidden {
+  display: block;
+}
