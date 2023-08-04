@@ -122,4 +122,156 @@ a {
   transform: scale(0.95);
 }
 
-/* 45:40 */
+.rotating-icon {
+  animation: rotate 10s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.arrow {
+  border: solid rgb(38, 38, 38);
+  border-width: 0 12px 12px 0;
+  padding: 12px;
+}
+
+.left-expand-arrow {
+  margin-right: 60px;
+  animation: bounceLeft 3s infinite;
+}
+
+@keyframes bounceLeft {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateX(0) rotate(135deg);
+  }
+  50% {
+    transform: translateX(-30px) rotate(135deg);
+  }
+  70% {
+    transform: translateX(-15px) rotate(135deg);
+  }
+}
+
+.right-expand-arrow {
+  margin-right: 60px;
+  animation: bounceRight 3s infinite;
+}
+
+@keyframes bounceRight {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateX(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateX(30px) rotate(-45deg);
+  }
+  70% {
+    transform: translateX(15px) rotate(-45deg);
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.hidden-pill {
+  height: 100%;
+  width: 100%;
+  border: solid 12px rgb(38, 38, 38);
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.social-fan {
+  position: relative;
+}
+
+.social-fan .social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: top right;
+  z-index: 10;
+}
+
+.social-fan:hover .instagram {
+  display: block;
+  animation: fanInstagram 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fanInstagram {
+  0% {
+    transform: rotate(0deg);
+    top: 0;
+    right: 0;
+  }
+  100% {
+    transform: rotate(-20deg);
+    top: -12px;
+    right: 40px;
+  }
+}
+
+.social-fan:hover .email {
+  display: block;
+  animation: fanEmail 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fanEmail {
+  0% {
+    transform: rotate(0deg);
+    top: 0;
+    right: 0;
+  }
+  100% {
+    transform: rotate(-40deg);
+    top: -16px;
+    right: 100px;
+  }
+}
+
+.social-fan:hover .vk {
+  display: block;
+  animation: fanVk 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fanVk {
+  0% {
+    transform: rotate(0deg);
+    top: 0;
+    right: 0;
+  }
+  100% {
+    transform: rotate(-60deg);
+    top: -20px;
+    right: 130px;
+  }
+}
+
+/* 1/02/14 */
+
