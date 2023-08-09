@@ -15,6 +15,8 @@ const iconPath = document.querySelector("#icon");
 const hiddenBox = document.querySelector(".hidden-box");
 const textBox = document.querySelector(".hidden-box .text-box");
 
+// Leftside info bar
+
 const expand = () => {
   if (hiddenBox.clientWidth !== 0) {
     textBox.classList.add("hidden");
@@ -26,3 +28,15 @@ const expand = () => {
 };
 
 expandPill.addEventListener("click", expand);
+
+// Rotate elements by reverse button
+
+const reverse = () => {
+  if (boxContainer.style.flexWrap === "wrap") {
+    boxContainer.style.flexWrap = "wrap-reverse";
+  } else {
+    boxContainer.style.flexWrap = "wrap";
+  }
+};
+
+reversePill.addEventListener("click", reverse);
