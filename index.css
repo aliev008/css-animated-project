@@ -41,21 +41,21 @@ a {
   min-height: 500px;
   min-width: 410px;
   flex-grow: 4;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .long-box {
   min-height: 150px;
   min-width: 500px;
   flex-grow: 4;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .small-box {
   min-height: 150px;
   min-width: 250px;
   flex-grow: 1;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .pill {
@@ -97,7 +97,7 @@ a {
 .input-container {
   position: absolute;
   bottom: 50px;
-  left: 102px;
+  left: 108px;
   transform: rotate(-90deg);
   transform-origin: bottom left;
   z-index: 2;
@@ -339,4 +339,8 @@ a {
 .hidden-box .text-box a {
   color: rgb(196, 104, 0);
   font-size: 1.8rem;
+}
+
+#expand .pill, #reverse .pill {
+  cursor: pointer;
 }

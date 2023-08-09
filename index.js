@@ -1,3 +1,5 @@
+import { colorPalettes } from "./colors.js";
+
 const body = document.querySelector("body");
 const sliderInput = document.querySelector("#slider-input");
 const allBoxes = document.querySelectorAll(".box");
@@ -40,3 +42,20 @@ const reverse = () => {
 };
 
 reversePill.addEventListener("click", reverse);
+
+// Theme
+
+let paletteIndex = 0;
+
+const xLetterIndex = 11;
+const rotateIconIndex = 3;
+
+// Start state
+
+xLetterSVG.style.fill = colorPalettes[paletteIndex][xLetterIndex].fill;
+allPills.forEach(
+  (pill, i) => (pill.style.backgroundColor = colorPalettes[paletteIndex][i].fill)
+);
+
+
+// 1:31:00
