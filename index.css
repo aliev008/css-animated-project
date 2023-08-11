@@ -41,21 +41,22 @@ a {
   min-height: 500px;
   min-width: 410px;
   flex-grow: 4;
-  /* background-color: green; */
+}
+
+.large-box#squish {
+  min-width: 150px !important;
 }
 
 .long-box {
   min-height: 150px;
   min-width: 500px;
   flex-grow: 4;
-  /* background-color: blue; */
 }
 
 .small-box {
   min-height: 150px;
   min-width: 250px;
   flex-grow: 1;
-  /* background-color: red; */
 }
 
 .pill {
@@ -198,8 +199,9 @@ a {
 }
 
 .logo-container img {
-  margin-right: 100px;
   width: 100%;
+  margin-right: 100px;
+  object-position: 0 5px;
 }
 
 .hidden-pill {
@@ -208,7 +210,10 @@ a {
   border: solid 12px rgb(38, 38, 38);
   box-sizing: border-box;
   border-radius: 100px;
-  text-align: center;
+}
+
+.hidden-pill a {
+  margin-right: 150px;
 }
 
 .social-fan {
@@ -220,14 +225,18 @@ a {
   top: 0;
   right: 0;
   transform-origin: top right;
+  text-align: center;
   z-index: 10;
+}
+
+.social-fan .social a {
+  font-size: 2rem;
 }
 
 .social-fan:hover .instagram {
   display: block;
   animation: fanInstagram 1s ease-in-out;
   animation-fill-mode: forwards;
-  display: flex;
 }
 
 @keyframes fanInstagram {
@@ -328,6 +337,10 @@ a {
   align-items: center;
 }
 
+.hidden-box ~ .box-container {
+  overflow: hidden;
+}
+
 .hidden-box .text-box {
   margin: 30px;
 }
@@ -341,6 +354,25 @@ a {
   font-size: 1.8rem;
 }
 
-#expand .pill, #reverse .pill {
+#expand .pill,
+#reverse .pill {
   cursor: pointer;
+}
+
+.pulse {
+  transform-origin: center;
+  animation: pulse 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
