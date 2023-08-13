@@ -39,23 +39,27 @@ a {
 
 .large-box {
   min-height: 500px;
-  min-width: 410px;
+  /* min-width: 500px; */
+  min-width: 27.62vw;
   flex-grow: 4;
 }
 
 .large-box#squish {
-  min-width: 150px !important;
+  /* min-width: 150px !important; */
+  min-width: 7.81vw !important;
 }
 
 .long-box {
   min-height: 150px;
-  min-width: 500px;
+  /* min-width: 500px; */
+  min-width: 27.62vw;
   flex-grow: 4;
 }
 
 .small-box {
   min-height: 150px;
-  min-width: 250px;
+  /* min-width: 250px; */
+  min-width: 13.81vw;
   flex-grow: 1;
 }
 
@@ -119,6 +123,7 @@ a {
   top: 40%;
   z-index: 10;
   display: none;
+  cursor: pointer;
 }
 
 .x-box:hover p {

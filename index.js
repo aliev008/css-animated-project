@@ -33,7 +33,7 @@ expandPill.addEventListener("click", expand);
 // Rotate elements by reverse button
 
 const reverse = () => {
-  if (boxContainer.style.flexWrap === "wrap") {
+  if (window.getComputedStyle(boxContainer).flexWrap === "wrap") {
     boxContainer.style.flexWrap = "wrap-reverse";
   } else {
     boxContainer.style.flexWrap = "wrap";
